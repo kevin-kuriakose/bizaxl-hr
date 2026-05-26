@@ -1,0 +1,13 @@
+{
+    "name": "BA Expense Claim Detail",
+    "doctype": "DocType",
+    "module": "BizAxl HR",
+    "istable": 1,
+    "fields": [
+        {"fieldname": "expense_date", "fieldtype": "Date", "label": "Date", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "expense_type", "fieldtype": "Data", "label": "Expense Type", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "description", "fieldtype": "Data", "label": "Description", "in_list_view": 1},
+        {"fieldname": "amount", "fieldtype": "Currency", "label": "Amount", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "sanctioned_amount", "fieldtype": "Currency", "label": "Sanctioned Amount", "in_list_view": 1}
+    ]
+}

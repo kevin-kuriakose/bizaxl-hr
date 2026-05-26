@@ -1,0 +1,8 @@
+{
+    "app_name": "bizaxl_hr",
+    "display_name": "BizAxl HR",
+    "description": "HR & People management",
+    "show_modules": ["BizAxl HR"],
+    "hide_modules": [],
+    "optional_modules": []
+}

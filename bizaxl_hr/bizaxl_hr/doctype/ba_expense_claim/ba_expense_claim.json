@@ -1,0 +1,27 @@
+{
+    "name": "BA Expense Claim",
+    "doctype": "DocType",
+    "module": "BizAxl HR",
+    "autoname": "naming_series:",
+    "naming_series": "EXP-.YYYY.-",
+    "is_submittable": 1,
+    "fields": [
+        {"fieldname": "naming_series", "fieldtype": "Select", "options": "EXP-.YYYY.-"},
+        {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "BA Employee", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "employee_name", "fieldtype": "Data", "label": "Employee Name", "fetch_from": "employee.employee_name", "read_only": 1},
+        {"fieldname": "posting_date", "fieldtype": "Date", "label": "Posting Date", "reqd": 1, "default": "Today", "in_list_view": 1},
+        {"fieldname": "col1", "fieldtype": "Column Break"},
+        {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "BA Company", "reqd": 1},
+        {"fieldname": "approval_status", "fieldtype": "Select", "label": "Status",
+         "options": "Draft\nSubmitted\nApproved\nRejected\nPaid", "default": "Draft", "in_list_view": 1},
+        {"fieldname": "expenses", "fieldtype": "Table", "label": "Expenses", "options": "BA Expense Claim Detail"},
+        {"fieldname": "total_claimed_amount", "fieldtype": "Currency", "label": "Total Claimed", "read_only": 1, "in_list_view": 1},
+        {"fieldname": "total_sanctioned_amount", "fieldtype": "Currency", "label": "Total Sanctioned", "read_only": 1},
+        {"fieldname": "remark", "fieldtype": "Small Text", "label": "Remark"}
+    ],
+    "permissions": [
+        {"role": "System Manager", "read": 1, "write": 1, "create": 1, "submit": 1, "cancel": 1},
+        {"role": "HR Manager", "read": 1, "write": 1, "create": 1, "submit": 1, "cancel": 1},
+        {"role": "Employee", "read": 1, "write": 1, "create": 1}
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "BA Designation",
+    "doctype": "DocType",
+    "module": "BizAxl HR",
+    "autoname": "field:designation_name",
+    "fields": [
+        {"fieldname": "designation_name", "fieldtype": "Data", "label": "Designation", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "description", "fieldtype": "Text", "label": "Description"}
+    ],
+    "permissions": [
+        {"role": "System Manager", "read": 1, "write": 1, "create": 1},
+        {"role": "HR Manager", "read": 1, "write": 1, "create": 1},
+        {"role": "All", "read": 1}
+    ]
+}

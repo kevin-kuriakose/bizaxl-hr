@@ -1,0 +1,11 @@
+{
+    "name": "BA Holiday",
+    "doctype": "DocType",
+    "module": "BizAxl HR",
+    "istable": 1,
+    "fields": [
+        {"fieldname": "holiday_date", "fieldtype": "Date", "label": "Date", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "description", "fieldtype": "Data", "label": "Description", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "weekly_off", "fieldtype": "Check", "label": "Weekly Off"}
+    ]
+}

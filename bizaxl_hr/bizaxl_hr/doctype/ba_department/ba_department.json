@@ -1,0 +1,20 @@
+{
+    "name": "BA Department",
+    "doctype": "DocType",
+    "module": "BizAxl HR",
+    "autoname": "field:department_name",
+    "is_tree": 1,
+    "nsm_parent_field": "parent_department",
+    "fields": [
+        {"fieldname": "department_name", "fieldtype": "Data", "label": "Department Name", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "BA Company", "reqd": 1},
+        {"fieldname": "parent_department", "fieldtype": "Link", "label": "Parent Department", "options": "BA Department"},
+        {"fieldname": "is_group", "fieldtype": "Check", "label": "Is Group"},
+        {"fieldname": "disabled", "fieldtype": "Check", "label": "Disabled"}
+    ],
+    "permissions": [
+        {"role": "System Manager", "read": 1, "write": 1, "create": 1},
+        {"role": "HR Manager", "read": 1, "write": 1, "create": 1},
+        {"role": "All", "read": 1}
+    ]
+}
