@@ -7,5 +7,37 @@
  "name": "BA Leave Balance",
  "ref_doctype": "BA Leave Allocation",
  "report_name": "BA Leave Balance",
- "report_type": "Script Report"
+ "report_type": "Script Report",
+ "filters": [
+  {
+   "fieldname": "employee",
+   "label": "Employee",
+   "fieldtype": "Link",
+   "options": "BA Employee"
+  },
+  {
+   "fieldname": "leave_type",
+   "label": "Leave Type",
+   "fieldtype": "Link",
+   "options": "BA Leave Type"
+  }
+ ],
+ "columns": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  }
+ ]
 }

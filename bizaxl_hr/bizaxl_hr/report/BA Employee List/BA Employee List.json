@@ -7,5 +7,43 @@
  "name": "BA Employee List",
  "ref_doctype": "BA Employee",
  "report_name": "BA Employee List",
- "report_type": "Script Report"
+ "report_type": "Script Report",
+ "filters": [
+  {
+   "fieldname": "company",
+   "label": "Company",
+   "fieldtype": "Link",
+   "options": "BA Company"
+  },
+  {
+   "fieldname": "department",
+   "label": "Department",
+   "fieldtype": "Link",
+   "options": "BA Department"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "\nActive\nInactive\nLeft"
+  }
+ ],
+ "columns": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  }
+ ]
 }
