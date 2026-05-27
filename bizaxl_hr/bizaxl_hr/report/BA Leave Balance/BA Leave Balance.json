@@ -1,0 +1,11 @@
+{
+ "add_total_row": 1,
+ "disabled": 0,
+ "doctype": "Report",
+ "is_standard": "Yes",
+ "module": "BizAxl HR",
+ "name": "BA Leave Balance",
+ "ref_doctype": "BA Leave Allocation",
+ "report_name": "BA Leave Balance",
+ "report_type": "Script Report"
+}
